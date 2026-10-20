@@ -1,0 +1,11 @@
+datasets:
+  zuco1:
+    root: data/raw/zuco1
+  zuco2:
+    root: data/raw/zuco2
+tasks: []            # TODO: reading tasks to include
+split:
+  strategy: subject_wise   # evaluation must test unseen subjects
+  val_subjects: []
+  test_subjects: []
+  seed: 42

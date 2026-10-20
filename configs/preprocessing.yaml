@@ -1,0 +1,9 @@
+bandpass: [0.5, 40.0]     # Hz, TODO confirm
+notch: null               # Hz, e.g. 50 or 60 if needed
+resample_hz: null
+reference: average
+artifact_handling: null   # e.g. ICA / threshold rejection
+normalization: zscore_per_channel
+epoching:
+  unit: sentence          # sentence | word
+output_dir: data/processed

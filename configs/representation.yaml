@@ -1,0 +1,12 @@
+approaches:
+  - name: baseline_handcrafted
+    type: baseline        # e.g. band power features
+  - name: pretrained_eeg_encoder
+    type: pretrained      # TODO choose a modern pretrained EEG model
+    checkpoint: null
+  - name: ssl_zuco
+    type: self_supervised # trained/fine-tuned on ZuCo with an SSL objective
+    objective: masked_reconstruction   # TODO
+    epochs: 50
+    lr: 1.0e-4
+output_dir: results/representations

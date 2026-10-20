@@ -1,0 +1,3 @@
+metrics: [retrieval_topk, cosine_similarity, mean_reciprocal_rank]
+conditions: [normal, degraded]
+report_dir: results/reports

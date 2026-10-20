@@ -1,0 +1,8 @@
+degradations:
+  - type: gaussian_noise
+    snr_db: [20, 10, 5, 0]
+  - type: channel_dropout
+    fraction: [0.1, 0.25, 0.5]
+quality_aware:
+  enabled: true
+  quality_metric: null      # TODO e.g. per-epoch SNR / artifact score

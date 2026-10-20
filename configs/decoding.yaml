@@ -1,0 +1,9 @@
+text_encoder: sentence-transformers/all-MiniLM-L6-v2   # TODO confirm
+alignment:
+  type: linear_projection   # EEG feature -> sentence embedding space
+  loss: contrastive
+retrieval:
+  top_k: [1, 5, 10]
+noise_control:
+  enabled: true             # decode from noise input to verify reliance on EEG
+  n_repeats: 5

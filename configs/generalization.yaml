@@ -1,0 +1,7 @@
+unseen_subjects:
+  protocol: leave_subjects_out
+cross_dataset:
+  - train: zuco1
+    test: zuco2
+  - train: zuco2
+    test: zuco1
